@@ -38,6 +38,13 @@ S:AddCallbackForAddon("AtlasLoot", "AtlasLoot", function()
 	S:HandleButton(AtlasLootDefaultFrame_Menu)
 	S:HandleButton(AtlasLootDefaultFrame_SubMenu)
 
+	S:HandleButton(AtlasLootDefaultFrame_Naxx)
+	S:HandleButton(AtlasLootDefaultFrame_Os)
+	S:HandleButton(AtlasLootDefaultFrame_Maly)
+	S:HandleButton(AtlasLootDefaultFrame_Uld)
+	S:HandleButton(AtlasLootDefaultFrame_Toc)
+	S:HandleButton(AtlasLootDefaultFrame_Icc)
+
 	AtlasLootDefaultFrame_LootBackground_Back:SetTexture()
 	AtlasLootDefaultFrame_LootBackground:SetTemplate("Transparent")
 
@@ -53,8 +60,8 @@ S:AddCallbackForAddon("AtlasLoot", "AtlasLoot", function()
 	S:HandleButton(AtlasLootDefaultFrameSearchClearButton)
 	S:HandleButton(AtlasLootDefaultFrameLastResultButton)
 
-	AtlasLootDefaultFrame_Options:Point("TOPLEFT", 43, -11)
-	AtlasLootDefaultFrame_LoadModules:Point("TOPRIGHT", -42, -11)
+	AtlasLootDefaultFrame_Options:Point("TOPRIGHT", -137, -15)
+	AtlasLootDefaultFrame_LoadModules:Point("TOPRIGHT", -42, -15)
 
 	AtlasLootDefaultFrame_Preset1:Point("BOTTOMLEFT", 83, 59)
 
