@@ -88,9 +88,10 @@ local addonList = {
 	"PowerAuras",
 	"Quartz",
 	"TipTac",
-	"!Swatter",
+	"Swatter",
 	"BeanCounter",
 	"Informant",
+	"SlideBar",
 	"AuctioneerSuite",
 	"Altoholic",
 	"LoseControl",
@@ -106,9 +107,11 @@ local addonList = {
 	"ElvinCDs",
 	"oRA3",
 	"RCLootCouncil",
+	"QDKP2_GUI",
 }
 local addonAlias = {
 	["DBM"] = "DBM-Core",
+	["Swatter"] = "!Swatter",
 	["AuctioneerSuite"] = "Auc-Advanced",
 	["_NPCScanOverlay"] = "_NPCScan.Overlay",
 	["ElvinCDs"] = "!ElvinCDs",
@@ -134,6 +137,8 @@ do
 			end
 		end
 	end
+
+	V.addOnSkins = {}
 
 	for _, addonName in ipairs(addonList) do
 		V.addOnSkins[addonName] = true
@@ -393,6 +398,11 @@ local function getOptions()
 								type = "select",
 								name = L["Template"],
 								values = backdropValues
+							},
+							DBMSkinHalf = {
+								order = 6,
+								type = "toggle",
+								name = L["DBM Half-bar Skin"]
 							}
 						}
 					},
